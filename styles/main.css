@@ -12,19 +12,20 @@ body{
     width: 100vw;
 }
 #calc{
+    display: flex;
+    flex-direction: column;
     width: 300px;
     height: 400px;
     background: green;
 }
 #outputRow{
     width: 100%;
-    flex-grow: 1;
     background-color: grey;
     margin: 0px;
 }
 #outputRow h1{
     padding: auto;
-    padding-top: 5px;
+    padding: 5px;
     margin: 0;
     text-align: center;
 }
@@ -35,9 +36,12 @@ body{
 }
 .button{
     display: flex;
+    background-color: green;
+    margin: 2px;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 0px 1px black;
 }
 .col{
     display: flex;
