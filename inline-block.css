@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: #eae9e9;
+}
+#body{
+    background-color: red;
+}
+#container ul ul input {
+    width: 95%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px inset tomato;
+}
+#clear{
+    width:45% !important;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -150px;
+    border-right: 1px outset white;
+    border-bottom: 1px outset white;
+    border-radius: 2px;
+}
+#container ul{
+    padding: 0px;
+    background-color: rgb(141, 154, 142);
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+}
+#container ul li{
+    text-align: center;
+    border: 2px outset tomato;
+    font-size: 30px;
+    position: relative;
+    padding-top: 12px;
+    display: inline-block;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    cursor: default;
+}
+#container ul li:active{
+    border: 2px inset tomato;
+}

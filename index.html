@@ -2,76 +2,43 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hello World</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <title>3-Rows-9-Items Centered</title>
+        <link rel="stylesheet" href="inline-block.css">
     </head>
     <body>
-        <div id="calc">
-            <div id="outputRow">
-                <h1>0+1·2-3/456789</h1>
-            </div>
-            <div id="inputSection">
-                <div id="inputCol1" class="col">
-                    <button id="zero" class="button">
-                        0
-                    </button>
-                    <button id="one" class="button">
-                        1
-                    </button>
-                    <button id="four" class="button">
-                        4
-                    </button>
-                    <button id="seven" class="button">
-                        7
-                    </button>
-                </div>
-                <div id="inputCol2" class="col">
-                    <button id="comma" class="button">
-                        dot
-                    </button>
-                    <button id="two" class="button">
-                        2
-                    </button>
-                    <button id="five" class="button">
-                        5
-                    </button>
-                    <button id="eight" class="button">
-                        8
-                    </button>
-                </div>
-                <div id="inputCol3" class="col">
-                    <button id="clear" class="button">
-                        Clear
-                    </button>
-                    <button id="three" class="button">
-                        3
-                    </button>
-                    <button id="six" class="button">
-                        6
-                    </button>
-                    <button id="nine" class="button">
-                        9
-                    </button>
-                </div>
-                <div id="inputCol4" class="col">
-                    <button id="equals" class="button">
-                        =
-                    </button>
-                    <button id="minus" class="button">
-                        -
-                    </button>
-                    <button id="pluss" class="button">
-                        +
-                    </button>
-                    <button id="divide" class="button">
-                        /
-                    </button>
-                    <button id="times" class="button">
-                        ·
-                    </button>
-                </div>
-            </div>
+        <div class="clearfix" id="container">
+            <ul>
+                <ul id="input" class="clearfix">
+                    <input type="text" name="" value="">
+                </ul>
+                <ul class="row">
+                    <li id="clear">clear</li>
+                </ul>
+                <ul class="row clearfix" id="row-1">
+                    <li id="item-7">7</li>
+                    <li id="item-8">8</li>
+                    <li id="item-9">9</li>
+                    <li id="divide" style="font-weight: bold;">/</li>
+                </ul>
+                <ul class="row clearfix" id="row-2">
+                    <li id="item-4">4</li>
+                    <li id="item-5">5</li>
+                    <li id="item-6">6</li>
+                    <li id="times">X</li>
+                </ul>
+                <ul class="row clearfix" id="row-3">
+                    <li id="item-1">1</li>
+                    <li id="item-2">2</li>
+                    <li id="item-3">3</li>
+                    <li id="pluss" style="font-weight: bold;">+</li>
+                </ul>
+                <ul class="row" id="row-0">
+                    <li id="item-0">0</li>
+                    <li id="dot">.</li>
+                    <li id="equals" style="font-weight: bold;">=</li>
+                    <li id="minus">-</li>
+                </ul>
+            </ul>
         </div>
     </body>
 </html>
