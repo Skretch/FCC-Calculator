@@ -6,7 +6,7 @@ var symbols = ["X","/", "+", "-","="];
 document.getElementById('container').addEventListener("click", function( event ){
     console.log(event.target.nodeName);
     if(calculation.length === 0 && number.length === 0) document.getElementById('input').value = "";
-    if(event.target && event.target.nodeName == "LI"){
+    if(event.target.nodeName === "LI"){
         if(event.target.id === "equals"){
             if(calculation.length > 0){
                 calculation.push(number.join(""));
@@ -20,8 +20,8 @@ document.getElementById('container').addEventListener("click", function( event )
         }else{
             number.push(event.target.textContent);
         }
+        updateField(event);
     }
-    updateField(event);
 }, false);
 
 function updateField(event){

@@ -10,6 +10,7 @@ html{
 #container ul ul input {
     width: 95%;
     height: 40px;
+    font-size: 30px;
     margin-top: 5px;
     border-radius: 5px;
     border: 2px inset tomato;
