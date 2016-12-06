@@ -27,8 +27,9 @@ function updateField(event){
     var field = document.getElementById('input');
     if(symbols.indexOf(event.target.textContent)!== -1){
         if(event.target.textContent === "="){
-            field.value = calculate();
-            number = [];
+            var result = calculate()
+            field.value = result;
+            number = [result.toString()];
             calculation = [];
         }else{
             field.value += " " + event.target.textContent + " ";
