@@ -27,9 +27,13 @@ function updateField(event){
     var field = document.getElementById('input');
     if(symbols.indexOf(event.target.textContent)!== -1){
         if(event.target.textContent === "="){
-            var result = calculate()
+            var result = calculate();
             field.value = result;
-            number = [result.toString()];
+            if(isNaN(result)){
+                number = [];
+            }else {
+                number = [result.toString()];
+            }
             calculation = [];
         }else{
             field.value += " " + event.target.textContent + " ";
